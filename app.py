@@ -73,8 +73,8 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text="Hello World")
          )
-    elif "たい" in text:
-        img_url = "https://taisoda-ezaki-lab.herokuapp.com/static/images/tai.png"
+    elif "犬" in text:
+        img_url = "https://dol.ismcdn.jp/mwimgs/a/f/-/img_afa0fad37e6c4d5ce34c01faf54f9e79108563.jpg"
         line_bot_api.reply_message(
             event.reply_token,
             [
