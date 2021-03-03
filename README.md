@@ -1,2 +1,2 @@
-# line-bot
-line-bot
+# linebot-tutorial
+linebotのチュートリアル
