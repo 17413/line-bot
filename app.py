@@ -71,14 +71,14 @@ def handle_message(event):
     if "こんにちは" in text:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="Hello World")
+            TextSendMessage(text="こんにちは")
          )
     elif "犬" in text:
         img_url = "https://dol.ismcdn.jp/mwimgs/a/f/-/img_afa0fad37e6c4d5ce34c01faf54f9e79108563.jpg"
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="たい！"),
+                TextSendMessage(text="保護されたがっている犬です"),
                 ImageSendMessage(img_url, img_url)
             ]
          )
@@ -87,6 +87,15 @@ def handle_message(event):
         line_bot_api.broadcast(
             TextSendMessage(text="通知テスト")
         )
+  elif "猫" in text:
+        img_url = "https://newsbyl-pctr.c.yimg.jp/r/iwiz-yn/rpr/nakanishimasao/00147070/top_image.jpeg?w=800"
+        line_bot_api.reply_message(
+            event.reply_token,
+            [
+                TextSendMessage(text="保護されたがっている猫です"),
+                ImageSendMessage(img_url, img_url)
+            ]
+         )        
     else:
     	line_bot_api.reply_message(
             event.reply_token,
