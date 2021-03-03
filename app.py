@@ -87,7 +87,7 @@ def handle_message(event):
         line_bot_api.broadcast(
             TextSendMessage(text="通知テスト")
         )
-  elif "猫" in text:
+    elif "猫" in text:
         img_url = "https://newsbyl-pctr.c.yimg.jp/r/iwiz-yn/rpr/nakanishimasao/00147070/top_image.jpeg?w=800"
         line_bot_api.reply_message(
             event.reply_token,
