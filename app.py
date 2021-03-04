@@ -82,15 +82,6 @@ def handle_message(event):
                 ImageSendMessage(img_url, img_url)
             ]
          )
-    elif "犬" in text:
-        img_url = "https://public.potaufeu.asahi.com/3c54-p/picture/16534517/a0434cb2264412705c420977d9032401_640px.jpg"
-        line_bot_api.reply_message(
-            event.reply_token,
-            [
-                TextSendMessage(text="こちらも"),
-                ImageSendMessage(img_url, img_url)
-            ]
-         )
     elif "通知" in text:
         # 全ユーザにプッシュ
         line_bot_api.broadcast(
