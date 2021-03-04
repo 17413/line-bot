@@ -95,16 +95,7 @@ def handle_message(event):
                 TextSendMessage(text="保護されたがっている猫です"),
                 ImageSendMessage(img_url, img_url)
             ]
-         )    
-    elif "カブトムシ" in text:
-        img_url = "https://www.honda.co.jp/outdoor/knowledge/adventure/picture-book/kabutomushi/images/mv.jpg
-        line_bot_api.reply_message(
-            event.reply_token,
-            [
-                TextSendMessage(text="保護されたがっているカブトです"),
-                ImageSendMessage(img_url, img_url)
-            ]
-         )            
+         )      
     else:
     	line_bot_api.reply_message(
             event.reply_token,
