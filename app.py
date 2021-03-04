@@ -77,11 +77,17 @@ def handle_message(event):
         img_url = "https://dol.ismcdn.jp/mwimgs/a/f/-/img_afa0fad37e6c4d5ce34c01faf54f9e79108563.jpg"
         line_bot_api.reply_message(
             event.reply_token,
-        img_url = "https://dol.ismcdn.jp/mwimgs/a/f/-/img_afa0fad37e6c4d5ce34c01faf54f9e79108563.jpg"
+            [
+                TextSendMessage(text="保護されたがっている犬です"),
+                ImageSendMessage(img_url, img_url)
+            ]
+         )
+    elif "犬" in text:
+        img_url = "https://public.potaufeu.asahi.com/3c54-p/picture/16534517/a0434cb2264412705c420977d9032401_640px.jpg"
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="保護されたがっている犬です"),
+                TextSendMessage(text="こちらも"),
                 ImageSendMessage(img_url, img_url)
             ]
          )
