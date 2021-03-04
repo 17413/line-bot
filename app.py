@@ -77,6 +77,9 @@ def handle_message(event):
         img_url = "https://dol.ismcdn.jp/mwimgs/a/f/-/img_afa0fad37e6c4d5ce34c01faf54f9e79108563.jpg"
         line_bot_api.reply_message(
             event.reply_token,
+        img_url = "https://dol.ismcdn.jp/mwimgs/a/f/-/img_afa0fad37e6c4d5ce34c01faf54f9e79108563.jpg"
+        line_bot_api.reply_message(
+            event.reply_token,
             [
                 TextSendMessage(text="保護されたがっている犬です"),
                 ImageSendMessage(img_url, img_url)
@@ -95,11 +98,20 @@ def handle_message(event):
                 TextSendMessage(text="保護されたがっている猫です"),
                 ImageSendMessage(img_url, img_url)
             ]
-         )        
+         )    
+    elif "カブトムシ" in text:
+        img_url = "https://www.honda.co.jp/outdoor/knowledge/adventure/picture-book/kabutomushi/images/mv.jpg
+        line_bot_api.reply_message(
+            event.reply_token,
+            [
+                TextSendMessage(text="保護されたがっているカブトです"),
+                ImageSendMessage(img_url, img_url)
+            ]
+         )            
     else:
     	line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="「" + text + "」って何？")
+            TextSendMessage(text="「" + text + "」の意味がわかりません？")
          )
 
 
