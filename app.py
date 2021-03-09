@@ -97,7 +97,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="芝犬です\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                TextSendMessage(text="犬です\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
                 ImageSendMessage(img_url, img_url)
             ]
          )
@@ -107,6 +107,7 @@ def handle_message(event):
             event.reply_token,
             [
                 TextSendMessage(text="保護されたがっている猫です"),
+                ImageSendMessage(img_url, img_url)
                 ImageSendMessage(img_url, img_url)
             ]
          )
