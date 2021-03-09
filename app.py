@@ -103,14 +103,13 @@ def handle_message(event):
          )
     elif "猫" in text:
         img_url = "https://newsbyl-pctr.c.yimg.jp/r/iwiz-yn/rpr/nakanishimasao/00147070/top_image.jpeg?w=800"
+        img2_url = "https://newsbyl-pctr.c.yimg.jp/r/iwiz-yn/rpr/nakanishimasao/00147070/top_image.jpeg?w=800"
         line_bot_api.reply_message(
             event.reply_token,
             [
                 TextSendMessage(text="保護されたがっている猫です"),
                 ImageSendMessage(img_url, img_url),
-                ImageSendMessage(img_url, img_url),
-                ImageSendMessage(img_url, img_url),
-                ImageSendMessage(img_url, img_url)
+                ImageSendMessage(img_url2, img_url2)
             ]
          )
     elif "ポメラニアン" in text:
