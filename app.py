@@ -109,7 +109,16 @@ def handle_message(event):
                 TextSendMessage(text="保護されたがっている猫です"),
                 ImageSendMessage(img_url, img_url)
             ]
-         ) 
+         )
+　　elif "ポメラニアアン" in text:
+        img_url = "https://newscast.jp/attachments/SvukFZqNs1fOe4i1y9XL.jpeg"
+        line_bot_api.reply_message(
+            event.reply_token,
+            [
+                TextSendMessage(text="ポメラニアンです"),
+                ImageSendMessage(img_url, img_url)
+            ]
+        )     
     elif "通知" in text:
         # 全ユーザにプッシュ
         line_bot_api.broadcast(
