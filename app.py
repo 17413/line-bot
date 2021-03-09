@@ -127,7 +127,16 @@ def handle_message(event):
                 TextSendMessage(text="トイプードルです"),
                 ImageSendMessage(img_url, img_url)
             ]
-        )              
+        )       
+    elif "チワワ" in text:
+        img_url = "https://www.petfamilyins.co.jp/pns/wp-content/uploads/2019/06/f19c76facf185af19e8f77ef6b8fda44.jpg.webp"
+        line_bot_api.reply_message(
+            event.reply_token,
+            [
+                TextSendMessage(text="チワワです"),
+                ImageSendMessage(img_url, img_url)
+            ]
+        )                   
     elif "通知" in text:
         # 全ユーザにプッシュ
         line_bot_api.broadcast(
