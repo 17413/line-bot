@@ -110,7 +110,7 @@ def handle_message(event):
                 ImageSendMessage(img_url, img_url)
             ]
          )
-　　elif "ポメラニアアン" in text:
+    elif "ポメラニアアン" in text:
         img_url = "https://newscast.jp/attachments/SvukFZqNs1fOe4i1y9XL.jpeg"
         line_bot_api.reply_message(
             event.reply_token,
