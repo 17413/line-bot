@@ -76,7 +76,7 @@ def handle_message(event):
     elif "お問い合わせ" in text:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="お問い合わせの際はこちらのサイトからご連絡ください")
+            TextSendMessage(text="お問い合わせの際はこちらのサイトからご連絡ください/nhttps://toba17435.azurewebsites.net/hakkason/site.html")
          )
     elif "こんばんわ" in text:
         line_bot_api.reply_message(
@@ -118,7 +118,16 @@ def handle_message(event):
                 TextSendMessage(text="ポメラニアンです"),
                 ImageSendMessage(img_url, img_url)
             ]
-        )       
+        )   
+    elif "トイプードル" in text:
+        img_url = "https://www.petfamilyins.co.jp/pns/wp-content/uploads/2019/06/1mohitseb_shutterstock_1079406218.jpg.webp"
+        line_bot_api.reply_message(
+            event.reply_token,
+            [
+                TextSendMessage(text="トイプードルです"),
+                ImageSendMessage(img_url, img_url)
+            ]
+        )              
     elif "通知" in text:
         # 全ユーザにプッシュ
         line_bot_api.broadcast(
