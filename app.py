@@ -83,6 +83,15 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text="わわわわ")
          )
+　　 elif "ポメラニアアン" in text:
+        img_url = "https://newscast.jp/attachments/SvukFZqNs1fOe4i1y9XL.jpeg"
+        line_bot_api.reply_message(
+            event.reply_token,
+            [
+                TextSendMessage(text="ポメラニアンです"),
+                ImageSendMessage(img_url, img_url)
+            ]
+         )   
     elif "ぶんじん" in text:
         img_url = "https://youtuber-love.com/wp-content/uploads/2019/09/%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88-2019-09-16-101620-1024x596.png"
         line_bot_api.reply_message(
@@ -110,16 +119,6 @@ def handle_message(event):
                 ImageSendMessage(img_url, img_url)
             ]
          ) 
-　 elif "ポメラニアアン" in text:
-        img_url = "https://newscast.jp/attachments/SvukFZqNs1fOe4i1y9XL.jpeg"
-        line_bot_api.reply_message(
-            event.reply_token,
-            [
-                TextSendMessage(text="ポメラニアンです"),
-                ImageSendMessage(img_url, img_url)
-            ]
-         )   
-
     elif "通知" in text:
         # 全ユーザにプッシュ
         line_bot_api.broadcast(
