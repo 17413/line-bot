@@ -118,7 +118,17 @@ def handle_message(event):
                 TextSendMessage(text="ポメラニアンです"),
                 ImageSendMessage(img_url, img_url)
             ]
-        )     
+        )       
+    elif "ポメラニアアン" in text:
+        img_url = "https://www.axa-direct.co.jp/s/pet/img/library/mv_library_dog_pomeranian.png"
+        line_bot_api.reply_message(
+            event.reply_token,
+            [
+                TextSendMessage(text="ポメラニアンです"),
+                ImageSendMessage(img_url, img_url)
+            ]
+        )       
+      
     elif "通知" in text:
         # 全ユーザにプッシュ
         line_bot_api.broadcast(
