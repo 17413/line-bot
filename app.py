@@ -109,7 +109,7 @@ def handle_message(event):
             [
                 TextSendMessage(text="保護されたがっている猫です"),
                 ImageSendMessage(img_url, img_url),
-                ImageSendMessage(img_url2, img_url2)
+                ImageSendMessage(img2_url, img2_url)
             ]
          )
     elif "ポメラニアン" in text:
