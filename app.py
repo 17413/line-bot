@@ -103,7 +103,7 @@ def handle_message(event):
          )
     elif "猫" in text:
         img_url = "https://newsbyl-pctr.c.yimg.jp/r/iwiz-yn/rpr/nakanishimasao/00147070/top_image.jpeg?w=800"
-        img2_url = "https://newsbyl-pctr.c.yimg.jp/r/iwiz-yn/rpr/nakanishimasao/00147070/top_image.jpeg?w=800"
+        img2_url = "https://tk.ismcdn.jp/mwimgs/e/b/1140/img_eb31afc9c1fb914d68a7c73b657c7ebe183087.jpg"
         line_bot_api.reply_message(
             event.reply_token,
             [
