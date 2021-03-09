@@ -91,14 +91,11 @@ def handle_message(event):
                 ImageSendMessage(img_url, img_url)
             ]
          )  
-　　elif "ぶんじん" in text:
-        img_url = "https://pbs.twimg.com/profile_images/869549423449186304/mrVlzsgM.jpg"
-        line_bot_api.reply_message(
-            event.reply_token,
-            [
-                TextSendMessage(text="ぶんじんです"),
-                ImageSendMessage(img_url, img_url)
-            ]
+         
+    elif "通知" in text:
+        # 全ユーザにプッシュ
+        line_bot_api.broadcast(
+            TextSendMessage(text="通知テスト")
         )    
     else:
     	line_bot_api.reply_message(
