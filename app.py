@@ -73,6 +73,16 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text="こんにちは")
          )
+         
+    elif "ぶんじん" in text:
+        img_url = "https://youtuber-love.com/wp-content/uploads/2019/09/%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88-2019-09-16-101620-1024x596.png"
+        line_bot_api.reply_message(
+            event.reply_token,
+            [
+                TextSendMessage(text="保護されたがっている犬です"),
+                ImageSendMessage(img_url, img_url)
+            ]
+         )
     elif "こんばんわ" in text:
         line_bot_api.reply_message(
             event.reply_token,
