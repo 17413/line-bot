@@ -76,7 +76,7 @@ def handle_message(event):
     elif "お問い合わせ" in text:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="お問い合わせの際はこちらのサイトからご連絡ください¥nhttps://toba17435.azurewebsites.net/hakkason/site.html")
+            TextSendMessage(text="お問い合わせの際はこちらのサイトからご連絡ください¥¥nhttps://toba17435.azurewebsites.net/hakkason/site.html")
          )
     elif "こんばんわ" in text:
         line_bot_api.reply_message(
