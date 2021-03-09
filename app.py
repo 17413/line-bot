@@ -99,11 +99,6 @@ def handle_message(event):
                 TextSendMessage(text="ぶんじんです"),
                 ImageSendMessage(img_url, img_url)
             ]
-         )  
-    elif "通知" in text:
-        # 全ユーザにプッシュ
-        line_bot_api.broadcast(
-            TextSendMessage(text="通知テスト")
         )    
     else:
     	line_bot_api.reply_message(
