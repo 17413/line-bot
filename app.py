@@ -83,8 +83,8 @@ def handle_message(event):
                 ImageSendMessage(img_url, img_url)
             ]
          )
-     elif "猫" in text:
-        img_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ4pyzXzyCvq_pWLcneirN5F39vuZFGIBjAg&usqp=CAU"
+     elif "トイプードル" in text:
+        img_url = "https://www.petfamilyins.co.jp/pns/wp-content/uploads/2019/06/1mohitseb_shutterstock_1079406218.jpg.webp"
         line_bot_api.reply_message(
             event.reply_token,
             [
