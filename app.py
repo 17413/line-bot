@@ -107,7 +107,9 @@ def handle_message(event):
             event.reply_token,
             [
                 TextSendMessage(text="保護されたがっている猫です"),
-                ImageSendMessage(img_url, img_url)
+                ImageSendMessage(img_url, img_url),
+                ImageSendMessage(img_url, img_url),
+                ImageSendMessage(img_url, img_url),
                 ImageSendMessage(img_url, img_url)
             ]
          )
