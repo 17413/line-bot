@@ -73,7 +73,7 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text="こんにちは")
          )
-    if "こんばんわ" in text:
+    elif "こんばんわ" in text:
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text="わわわわ")
