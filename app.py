@@ -97,7 +97,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="保護されたがっている犬です"),
+                TextSendMessage(text="芝犬です\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
                 ImageSendMessage(img_url, img_url)
             ]
          )
@@ -115,7 +115,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="ポメラニアンです"),
+                TextSendMessage(text="ポメラニアンです\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
                 ImageSendMessage(img_url, img_url)
             ]
         )   
@@ -124,7 +124,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="トイプードルです"),
+                TextSendMessage(text="トイプードルです\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
                 ImageSendMessage(img_url, img_url)
             ]
         )       
@@ -133,7 +133,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="チワワです"),
+                TextSendMessage(text="チワワです\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
                 ImageSendMessage(img_url, img_url)
             ]
         )                   
