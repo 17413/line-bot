@@ -73,6 +73,11 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text="こんにちは")
          )
+    if "こんばんわ" in text:
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text="わわわわ")
+         )
     elif "犬" in text:
         img_url = "https://dol.ismcdn.jp/mwimgs/a/f/-/img_afa0fad37e6c4d5ce34c01faf54f9e79108563.jpg"
         line_bot_api.reply_message(
@@ -91,7 +96,7 @@ def handle_message(event):
                 ImageSendMessage(img_url, img_url)
             ]
          )  
-         
+
     elif "通知" in text:
         # 全ユーザにプッシュ
         line_bot_api.broadcast(
