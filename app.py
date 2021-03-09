@@ -79,10 +79,19 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="保護されたがっている犬です"),
+                TextSendMessage(text="文人です"),
                 ImageSendMessage(img_url, img_url)
             ]
          )
+     elif "猫" in text:
+        img_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ4pyzXzyCvq_pWLcneirN5F39vuZFGIBjAg&usqp=CAU"
+        line_bot_api.reply_message(
+            event.reply_token,
+            [
+                TextSendMessage(text="保護されたがっている猫です"),
+                ImageSendMessage(img_url, img_url)
+            ]
+         )  
     elif "こんばんわ" in text:
         line_bot_api.reply_message(
             event.reply_token,
