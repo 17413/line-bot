@@ -102,12 +102,12 @@ def handle_message(event):
             ]
          )
     elif "猫" in text:
-        img_url = "https://newsbyl-pctr.c.yimg.jp/r/iwiz-yn/rpr/nakanishimasao/00147070/top_image.jpeg?w=800"
+        img_url = "https://free-materials.com/adm/wp-content/uploads/2020/07/adpDSC_6464-760x507-1-300x200.jpg"
         img2_url = "https://tk.ismcdn.jp/mwimgs/e/b/1140/img_eb31afc9c1fb914d68a7c73b657c7ebe183087.jpg"
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="保護されたがっている猫です"),
+                TextSendMessage(text="猫の一覧です。"),
                 ImageSendMessage(img_url, img_url),
                 ImageSendMessage(img2_url, img2_url)
             ]
@@ -117,7 +117,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="ポメラニアンです\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                TextSendMessage(text="ポメラニアンです\n詳しくはこちらをご覧ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
                 ImageSendMessage(img_url, img_url)
             ]
         )   
@@ -126,7 +126,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="トイプードルです\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                TextSendMessage(text="トイプードルです\n詳しくはこちらをご覧ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
                 ImageSendMessage(img_url, img_url)
             ]
         )       
@@ -135,7 +135,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="チワワです\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                TextSendMessage(text="チワワです\n詳しくはこちらをご覧ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
                 ImageSendMessage(img_url, img_url)
             ]
         )                   
