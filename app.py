@@ -94,49 +94,61 @@ def handle_message(event):
          )
     elif "犬" in text:
         img_url = "https://dol.ismcdn.jp/mwimgs/a/f/-/img_afa0fad37e6c4d5ce34c01faf54f9e79108563.jpg"
+        img_url2 = "https://blogimg.goo.ne.jp/user_image/34/3b/f7566028f97f4ebe957a4cd239b73eb2.jpg"
+        img_url3 = "https://pictkan.com/uploads/converted/15/05/30/467222154-dog-747460_1920-L84-1920x1280-MM-100.jpg"
+        img_url4 = "https://aphoto.love/wp-content/uploads/2019/03/2019-03-06-20.58.57-1024x683.jpg"
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="犬です\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
-                ImageSendMessage(img_url, img_url)
+                TextSendMessage(text="犬の一覧です"),
+                ImageSendMessage(img_url, img_url),
+                ImageSendMessage(img_url2, img_url2),
+                ImageSendMessage(img_url3, img_url3),
+                ImageSendMessage(img_url4, img_url4)
             ]
          )
     elif "猫" in text:
         img_url = "https://free-materials.com/adm/wp-content/uploads/2020/07/adpDSC_6464-760x507-1-300x200.jpg"
-        img2_url = "https://tk.ismcdn.jp/mwimgs/e/b/1140/img_eb31afc9c1fb914d68a7c73b657c7ebe183087.jpg"
+        img_url2 = "https://tk.ismcdn.jp/mwimgs/e/b/1140/img_eb31afc9c1fb914d68a7c73b657c7ebe183087.jpg"
         line_bot_api.reply_message(
             event.reply_token,
             [
                 TextSendMessage(text="猫の一覧です。"),
                 ImageSendMessage(img_url, img_url),
-                ImageSendMessage(img2_url, img2_url)
+                ImageSendMessage(img_url2, img_url2)
             ]
          )
     elif "ポメラニアン" in text:
         img_url = "https://newscast.jp/attachments/SvukFZqNs1fOe4i1y9XL.jpeg"
+        img_url2 = "https://thumb.photo-ac.com/bc/bc49950525af36bb2a1c46ea96fa7576_t.jpeg"
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="ポメラニアンです\n詳しくはこちらをご覧ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
-                ImageSendMessage(img_url, img_url)
+                TextSendMessage(text="ポメラニアンです\nお問い合わせはこちらから\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                ImageSendMessage(img_url, img_url),
+                ImageSendMessage(img_url2, img_url2)
             ]
         )   
     elif "トイプードル" in text:
         img_url = "https://www.petfamilyins.co.jp/pns/wp-content/uploads/2019/06/1mohitseb_shutterstock_1079406218.jpg.webp"
+        img_url2 = "https://free-materials.com/adm/wp-content/uploads/2016/02/6776d7d26279ecd81ed614b9bdd8df5a-500x332.jpg"
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="トイプードルです\n詳しくはこちらをご覧ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
-                ImageSendMessage(img_url, img_url)
+                TextSendMessage(text="トイプードルです\nお問い合わせはこちらから\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                ImageSendMessage(img_url, img_url),
+                ImageSendMessage(img_url2, img_url2)
             ]
         )       
     elif "チワワ" in text:
         img_url = "https://www.petfamilyins.co.jp/pns/wp-content/uploads/2019/06/f19c76facf185af19e8f77ef6b8fda44.jpg.webp"
+        img_url2 = "https://imageslabo.com/wp-content/uploads/2019/05/553_dog_chihuahua_7203.jpg"
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="チワワです\n詳しくはこちらをご覧ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
-                ImageSendMessage(img_url, img_url)
+                TextSendMessage(text="チワワです\nお問い合わせはこちらから\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                ImageSendMessage(img_url, img_url),
+                ImageSendMessage(img_url2, img_url2)
             ]
         )                   
     elif "通知" in text:
