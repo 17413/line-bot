@@ -76,7 +76,7 @@ def handle_message(event):
     elif "お問い合わせ" in text:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="お問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html")
+            TextSendMessage(text="お問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hackathon/form.html")
          )
     elif "こんばんわ" in text:
         line_bot_api.reply_message(
@@ -100,7 +100,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="一部の犬一覧です\n犬種で検索することも可能です\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                TextSendMessage(text="一部の犬一覧です\n犬種で検索することも可能です\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hackathon/form.html"),
                 ImageSendMessage(img_url, img_url),
                 ImageSendMessage(img_url2, img_url2),
                 ImageSendMessage(img_url3, img_url3),
@@ -111,11 +111,11 @@ def handle_message(event):
         img_url = "https://17413.azurewebsites.net/HAckason/%E3%81%AD%E3%81%93.jpg"
         img_url2 = "https://17413.azurewebsites.net/HAckason/%E3%81%AD%E3%81%A3%E3%81%93.jpeg"
         img_url3 = "https://17413.azurewebsites.net/HAckason/IMG_8022.JPG"
-        img_url4 = "https://17413.azurewebsites.net//HAckason/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99%20(1).png"
+        img_url4 = "https://17413.azurewebsites.net/HAckason/%E3%83%8D%E3%82%B3.jpeg"
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="一部の猫一覧です\n猫種で検索することも可能です\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                TextSendMessage(text="一部の猫一覧です\n猫種で検索することも可能です\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hackathon/form.html"),
                 ImageSendMessage(img_url, img_url),
                 ImageSendMessage(img_url2, img_url2),
                 ImageSendMessage(img_url3, img_url3),
@@ -128,7 +128,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="ポメラニアンです\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                TextSendMessage(text="ポメラニアンです\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hackathon/form.html"),
                 ImageSendMessage(img_url, img_url),
                 ImageSendMessage(img_url2, img_url2)
             ]
@@ -139,7 +139,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="トイプードルです\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                TextSendMessage(text="トイプードルです\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hackathon/form.html"),
                 ImageSendMessage(img_url, img_url),
                 ImageSendMessage(img_url2, img_url2)
             ]
@@ -150,11 +150,33 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="チワワです\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                TextSendMessage(text="チワワです\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hackathon/form.html"),
                 ImageSendMessage(img_url, img_url),
                 ImageSendMessage(img_url2, img_url2)
             ]
-        )                   
+        )       
+    elif "スコティッシュフォールド" in text:
+        img_url = "https://17413.azurewebsites.net/HAckason/%E3%81%99%E3%81%93.jpg"
+        img_url2 = "https://17413.azurewebsites.net/HAckason/%E3%82%B9%E3%82%B3%E3%83%86%E3%82%A3.jpeg"
+        line_bot_api.reply_message(
+            event.reply_token,
+            [
+                TextSendMessage(text="スコティッシュフォールドです\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hackathon/form.html"),
+                ImageSendMessage(img_url, img_url),
+                ImageSendMessage(img_url2, img_url2)
+            ]
+        )          
+    elif "アメリカンショートヘア" in text:
+        img_url = "https://17413.azurewebsites.net/HAckason/%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%83%98%E3%82%A2.jpg"
+        img_url2 = "https://17413.azurewebsites.net/HAckason/%E9%9B%A8%E5%B7%BB.jpg"
+        line_bot_api.reply_message(
+            event.reply_token,
+            [
+                TextSendMessage(text="アメリカンショートヘアです\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hackathon/form.html"),
+                ImageSendMessage(img_url, img_url),
+                ImageSendMessage(img_url2, img_url2)
+            ]
+        )                                            
     elif "通知" in text:
         # 全ユーザにプッシュ
         line_bot_api.broadcast(
