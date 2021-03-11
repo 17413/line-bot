@@ -118,7 +118,7 @@ def handle_message(event):
                 TextSendMessage(text="一部の猫一覧です\n猫種で検索することも可能です\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
                 ImageSendMessage(img_url, img_url),
                 ImageSendMessage(img_url2, img_url2),
-                ImageSendMessage(img_ur3, img_ur3),
+                ImageSendMessage(img_url3, img_url3),
                 ImageSendMessage(img_url4, img_url4)
             ]
          )
