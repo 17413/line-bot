@@ -108,7 +108,7 @@ def handle_message(event):
             ]
          )
     elif "猫" in text:
-        img_url = "https://free-materials.com/adm/wp-content/uploads/2020/07/adpDSC_6464-760x507-1-300x200.jpg"
+        img_url = "https://17413.azurewebsites.net/HAckason/%E3%81%AD%E3%81%93.jpg"
         img_url2 = "https://tk.ismcdn.jp/mwimgs/e/b/1140/img_eb31afc9c1fb914d68a7c73b657c7ebe183087.jpg"
         line_bot_api.reply_message(
             event.reply_token,
