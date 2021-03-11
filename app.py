@@ -93,7 +93,7 @@ def handle_message(event):
             ]
          )
     elif "犬" in text:
-        img_url = "https://dol.ismcdn.jp/mwimgs/a/f/-/img_afa0fad37e6c4d5ce34c01faf54f9e79108563.jpg"
+        img_url = "https://17413.azurewebsites.net/HAckason/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99%20(1).png"
         img_url2 = "https://blogimg.goo.ne.jp/user_image/34/3b/f7566028f97f4ebe957a4cd239b73eb2.jpg"
         img_url3 = "https://pictkan.com/uploads/converted/15/05/30/467222154-dog-747460_1920-L84-1920x1280-MM-100.jpg"
         img_url4 = "https://aphoto.love/wp-content/uploads/2019/03/2019-03-06-20.58.57-1024x683.jpg"
@@ -124,7 +124,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="ポメラニアンです\nお問い合わせはこちらから\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                TextSendMessage(text="ポメラニアンです\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
                 ImageSendMessage(img_url, img_url),
                 ImageSendMessage(img_url2, img_url2)
             ]
@@ -135,7 +135,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="トイプードルです\nお問い合わせはこちらから\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                TextSendMessage(text="トイプードルです\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
                 ImageSendMessage(img_url, img_url),
                 ImageSendMessage(img_url2, img_url2)
             ]
@@ -146,7 +146,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="チワワです\nお問い合わせはこちらから\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
+                TextSendMessage(text="チワワです\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
                 ImageSendMessage(img_url, img_url),
                 ImageSendMessage(img_url2, img_url2)
             ]
