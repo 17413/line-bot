@@ -109,7 +109,7 @@ def handle_message(event):
          )
     elif "猫" in text:
         img_url = "https://17413.azurewebsites.net/HAckason/%E3%81%AD%E3%81%93.jpg"
-        img_url2 = "https://tk.ismcdn.jp/mwimgs/e/b/1140/img_eb31afc9c1fb914d68a7c73b657c7ebe183087.jpg"
+        img_url2 = "https://17413.azurewebsites.net/HAckason/%E3%81%AD%E3%81%A3%E3%81%93.jpeg"
         img_url3 = "https://17413.azurewebsites.net/HAckason/IMG_8022.JPG"
         img_url4 = "https://17413.azurewebsites.net//HAckason/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99%20(1).png"
         line_bot_api.reply_message(
