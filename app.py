@@ -93,10 +93,10 @@ def handle_message(event):
             ]
          )
     elif "犬" in text:
-        img_url = "https://17413.azurewebsites.net/HAckason/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99%20(1).png"
-        img_url2 = "https://blogimg.goo.ne.jp/user_image/34/3b/f7566028f97f4ebe957a4cd239b73eb2.jpg"
-        img_url3 = "https://pictkan.com/uploads/converted/15/05/30/467222154-dog-747460_1920-L84-1920x1280-MM-100.jpg"
-        img_url4 = "https://aphoto.love/wp-content/uploads/2019/03/2019-03-06-20.58.57-1024x683.jpg"
+        img_url = "https://17413.azurewebsites.net/HAckason/IMG_8017.JPG"
+        img_url2 = "https://17413.azurewebsites.net/HAckason/IMG_8019.JPG"
+        img_url3 = "https://17413.azurewebsites.net/HAckason/IMG_8020.JPG"
+        img_url4 = "https://17413.azurewebsites.net//HAckason/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99%20(1).png"
         line_bot_api.reply_message(
             event.reply_token,
             [
@@ -119,8 +119,8 @@ def handle_message(event):
             ]
          )
     elif "ポメラニアン" in text:
-        img_url = "https://newscast.jp/attachments/SvukFZqNs1fOe4i1y9XL.jpeg"
-        img_url2 = "https://thumb.photo-ac.com/bc/bc49950525af36bb2a1c46ea96fa7576_t.jpeg"
+        img_url = "https://17413.azurewebsites.net/HAckason/%E3%82%8F%E3%82%93%E3%82%8F%E3%82%93.JPG"
+        img_url2 = "https://17413.azurewebsites.net/HAckason/%E3%82%8F%E3%82%93%E3%82%8F%E3%82%93%E3%82%8F%E3%82%93.JPG"
         line_bot_api.reply_message(
             event.reply_token,
             [
@@ -130,8 +130,8 @@ def handle_message(event):
             ]
         )   
     elif "トイプードル" in text:
-        img_url = "https://www.petfamilyins.co.jp/pns/wp-content/uploads/2019/06/1mohitseb_shutterstock_1079406218.jpg.webp"
-        img_url2 = "https://free-materials.com/adm/wp-content/uploads/2016/02/6776d7d26279ecd81ed614b9bdd8df5a-500x332.jpg"
+        img_url = "https://17413.azurewebsites.net/HAckason/IMG_8027.JPG"
+        img_url2 = "https://17413.azurewebsites.net/HAckason/%E3%83%88%E3%82%A4.JPG"
         line_bot_api.reply_message(
             event.reply_token,
             [
@@ -141,8 +141,8 @@ def handle_message(event):
             ]
         )       
     elif "チワワ" in text:
-        img_url = "https://www.petfamilyins.co.jp/pns/wp-content/uploads/2019/06/f19c76facf185af19e8f77ef6b8fda44.jpg.webp"
-        img_url2 = "https://imageslabo.com/wp-content/uploads/2019/05/553_dog_chihuahua_7203.jpg"
+        img_url = "https://17413.azurewebsites.net/HAckason/%E3%81%A1%E3%82%8F%E3%82%8F.JPG"
+        img_url2 = "https://17413.azurewebsites.net/HAckason/%E3%81%A1%E3%82%8F%E3%82%8F%E3%82%8F.JPG"
         line_bot_api.reply_message(
             event.reply_token,
             [
