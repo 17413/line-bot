@@ -100,7 +100,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="犬の一覧です"),
+                TextSendMessage(text="一部の犬一覧です\n犬種で検索することも可能です\nお問い合わせの際はこちらのサイトからご連絡ください\nhttps://toba17435.azurewebsites.net/hakkason/site.html"),
                 ImageSendMessage(img_url, img_url),
                 ImageSendMessage(img_url2, img_url2),
                 ImageSendMessage(img_url3, img_url3),
