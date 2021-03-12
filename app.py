@@ -186,7 +186,7 @@ def handle_message(event):
                 ImageSendMessage(img_url, img_url)
             ]
          )             
-    elif "柴犬" in text:
+    elif "柴" in text:
         img_url = "https://17413.azurewebsites.net/HAckason/%E8%8A%9D.jpg"
         img_url2 = "https://17413.azurewebsites.net/HAckason/%E3%81%97%E3%81%AF%E3%82%99.png"
         line_bot_api.reply_message(
